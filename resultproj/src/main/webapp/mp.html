@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .table-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results Entry Form</h1>
+    <div class="table-container">
+        <form action="mp.jsp" method="post">
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <td>Roll Number:</td>
+                    <td><input type="text" name="ROLL_NUMBER" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td>Semester:</td>
+                    <td>
+                        <select name="SEM" required>
+                            <option value="11">1st year 1s tsem</option>
+                            <option value="12">1st year 2nd sem</option>
+                            <option value="21">2nd year 1st sem</option>
+                            <option value="22">2nd year 2nd sem</option>
+                            <option value="31">3rd year 1st sem</option>
+                            <option value="32">3rd year 2nd sem</option>
+                            <option value="41">4th year 1st sem</option>
+                            <option value="42">4 th year 2nd sem</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="NAME" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 1:</td>
+                    <td><input type="number" name="SUBJECT1" min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 2:</td>
+                    <td><input type="number" name="SUBJECT2" min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 3:</td>
+                    <td><input type="number" name="SUBJECT3" min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 4:</td>
+                    <td><input type="number" name="SUBJECT4" min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 5:</td>
+                    <td><input type="number" name="SUBJECT5" min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td>Subject 6:</td>
+                    <td><input type="number" name="SUBJECT6" min="0" max="100" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
